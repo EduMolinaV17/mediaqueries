@@ -1,0 +1,231 @@
+.god {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: menu;
+  background: #0037a1;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.bicicleta {
+  display: flex;
+  width: 185px;
+  justify-items: center;
+  align-items: center;
+}
+.bicicleta h6 {
+  margin: 0;
+  width: 200px;
+  padding-left: 10px;
+}
+aside{
+  display: none;
+  grid-area: aside;
+}
+section {
+  display: flex;
+  grid-area: filtro;
+  background: #d2cccc;
+  height: 60px;
+  flex-direction: column;
+  align-items: center;
+}
+section p {
+  margin: 0;
+}
+section select {
+  width: 180px;
+  height: 30px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-area: seccion-principal;
+  padding: 10px;
+}
+main img {
+  width: 250px;
+}
+#escritorio{
+    display: none;
+}
+.card {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.card-img-top {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+.card-body button {
+  width: 100px;
+  background-color: #0037a1;
+  color: white;
+}
+.paginacion {
+  display: flex;
+  padding-top: 10px;
+}
+.pagination {
+  margin: 0;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  grid-area: pie-de-pagina;
+  background: #0037a1;
+  color: white;
+  padding: 10px;
+  
+}
+.derechos h6{
+    margin: 0;
+}
+.grid-container {
+  display: grid;
+  border: 1px solid black;
+  grid-template-rows: 1fr 1fr 6fr 1fr;
+  grid-template-areas:
+    "menu"
+    "filtro"
+    "seccion-principal"
+    "pie-de-pagina";
+    height: 100vh;
+}
+@media (min-width: 576px){
+  .god {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    grid-area: menu;
+    background: #0037a1;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .bicicleta {
+    display: flex;
+    width: 185px;
+    justify-items: center;
+    align-items: center;
+  }
+  .bicicleta h6 {
+    margin: 0;
+    width: 200px;
+    padding-left: 10px;
+  }
+  .barras{
+    display: none;
+  }
+  aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    background-color: #0037a1;
+    color: white;
+  }
+  main {
+    display: flex;
+    justify-content:space-evenly;
+    justify-items: center;
+    align-items:center;
+    grid-area: seccion-principal;
+    padding: 0;
+  }
+  article{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    width: 100wh;
+  }
+  .mobile-card{
+    width: 250px;
+    height: 250px;
+  }
+  #escritorio{
+    display:flow-root;
+    width: 250px;
+    height: 250px;
+  }
+  .card {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+  }
+  .card-img-top {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .card-img-top img{
+    width: 160px;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .card-body h6, p{
+    width: 200px;
+  }
+  .card-body button {
+    width: 100px;
+    background-color: #0037a1;
+    color: white;
+  }
+  .paginacion{
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    grid-area: pie-de-pagina;
+    background: #03266c;
+    color: white;
+    padding: 10px;
+    
+  }
+    .grid-container{
+       grid-template-areas:
+      "menu filtro"
+      "aside seccion-principal"
+      "aside seccion-principal"
+      "pie-de-pagina seccion-principal";
+      grid-template-columns: 12rem 1fr;
+      height: 100vh;
+    }
+}
