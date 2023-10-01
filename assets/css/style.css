@@ -48,7 +48,6 @@ main {
   justify-items: center;
   align-items: center;
   grid-area: seccion-principal;
-  padding: 10px;
 }
 main img {
   width: 250px;
@@ -175,7 +174,7 @@ footer {
     justify-items: center;
     align-items: center;
   }
-  .card-img-top img{
+  .card-img-top img {
     width: 130px;
   }
   .card-body {
