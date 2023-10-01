@@ -94,8 +94,7 @@ footer {
   grid-area: pie-de-pagina;
   background: #0037a1;
   color: white;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 10px;
 }
 .derechos h6 {
   margin: 0;
@@ -201,6 +200,7 @@ footer {
     background: #03266c;
     color: white;
     padding-top: 20px;
+    padding-bottom: 20px;
   }
   .grid-container {
     grid-template-areas:
