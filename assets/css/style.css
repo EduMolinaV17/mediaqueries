@@ -20,7 +20,7 @@
   width: 200px;
   padding-left: 10px;
 }
-aside{
+aside {
   display: none;
   grid-area: aside;
 }
@@ -31,6 +31,8 @@ section {
   height: 60px;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
 section p {
   margin: 0;
@@ -51,8 +53,8 @@ main {
 main img {
   width: 250px;
 }
-#escritorio{
-    display: none;
+#escritorio {
+  display: none;
 }
 .card {
   display: flex;
@@ -93,10 +95,9 @@ footer {
   background: #0037a1;
   color: white;
   padding: 10px;
-  
 }
-.derechos h6{
-    margin: 0;
+.derechos h6 {
+  margin: 0;
 }
 .grid-container {
   display: grid;
@@ -107,9 +108,9 @@ footer {
     "filtro"
     "seccion-principal"
     "pie-de-pagina";
-    height: 100vh;
+  height: 100vh;
 }
-@media (min-width: 576px){
+@media (min-width: 576px) {
   .god {
     display: flex;
     flex-direction: column;
@@ -133,10 +134,10 @@ footer {
     width: 200px;
     padding-left: 10px;
   }
-  .barras{
+  .barras {
     display: none;
   }
-  aside{
+  aside {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,37 +147,28 @@ footer {
   }
   main {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: center;
     justify-items: center;
-    align-items:center;
+    align-items: center;
     grid-area: seccion-principal;
     padding: 0;
   }
-  article{
+  article {
     display: grid;
     justify-content: center;
     justify-items: center;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
-    width: 100wh;
+    row-gap: 10px;
   }
-  .mobile-card{
-    width: 250px;
-    height: 250px;
-  }
-  #escritorio{
-    display:flow-root;
-    width: 250px;
-    height: 250px;
+  #escritorio {
+    display: flex;
   }
   .card {
     display: flex;
     justify-items: center;
     align-items: center;
-    height: 200px;
-    width: 200px;
   }
   .card-img-top {
     display: flex;
@@ -185,7 +177,7 @@ footer {
     align-items: center;
   }
   .card-img-top img{
-    width: 160px;
+    width: 130px;
   }
   .card-body {
     display: flex;
@@ -194,15 +186,7 @@ footer {
     justify-items: center;
     align-items: center;
   }
-  .card-body h6, p{
-    width: 200px;
-  }
-  .card-body button {
-    width: 100px;
-    background-color: #0037a1;
-    color: white;
-  }
-  .paginacion{
+  .paginacion {
     align-items: center;
     justify-items: center;
     justify-content: center;
@@ -217,15 +201,14 @@ footer {
     background: #03266c;
     color: white;
     padding: 10px;
-    
   }
-    .grid-container{
-       grid-template-areas:
+  .grid-container {
+    grid-template-areas:
       "menu filtro"
       "aside seccion-principal"
       "aside seccion-principal"
       "pie-de-pagina seccion-principal";
-      grid-template-columns: 12rem 1fr;
-      height: 100vh;
-    }
+    grid-template-columns: 12rem 1fr;
+    height: 100vh;
+  }
 }
