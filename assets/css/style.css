@@ -94,14 +94,14 @@ footer {
   grid-area: pie-de-pagina;
   background: #0037a1;
   color: white;
-  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 .derechos h6 {
   margin: 0;
 }
 .grid-container {
   display: grid;
-  border: 1px solid black;
   grid-template-rows: 1fr 1fr 6fr 1fr;
   grid-template-areas:
     "menu"
@@ -200,7 +200,7 @@ footer {
     grid-area: pie-de-pagina;
     background: #03266c;
     color: white;
-    padding: 10px;
+    padding-top: 20px;
   }
   .grid-container {
     grid-template-areas:
